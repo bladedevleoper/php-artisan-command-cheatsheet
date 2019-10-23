@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PHP Artisan CheatSheet</title>
+    </head>
+    <body>
+        
+            <h1>PHP Artisan Commands:</h1>
+               
+            <h5>PHP Artisan Help</h5>
+            <p>This will show the all available commands that we can use within the command line:</p>
+            
+            
+            <code>
+
+                    Command:
+                    php artisan --help
+
+            </code>
+            
+            
+            
+    
+            <h5>PHP Artisan Help</h5>
+            
+            <p>Make a model and create a controller and a migration for that model.</p>
+            <code>
+            Command:
+            php artisan make:model SingularName -c -m
+            
+            </code>
+            
+          
+            
+            
+            
+            <h5>Make a controller:</h5>
+            
+            <code>
+                command line:
+                            
+                php artisan make:controller SingularNameController 
+            </code>
+            
+            
+                       
+            
+            <h5>Make a model:</h5>
+            <p>
+                (don't forget to think 'singular' when naming models)
+            </p>
+            
+            
+            <code>
+                Command:
+                
+                php artisan make:model SingularName
+            </code>
+            
+            
+            
+            
+            
+                    
+            
+            
+            <h5>Make a migration</h5>
+            
+            <p>(dont forget to make this a plural which means it has an s on the end of the table name),
+            
+            for example create_customers_migration</p>
+            
+            
+            <code>
+                    Command:
+            
+                    php artisan make:migration create_nameoftable_migartion
+            </code>
+            
+            
+            
+            
+            
+            <h5>Run Migrations</h5>
+            
+            <p>
+                To run migrations that have not been run then run this command.
+                This won't drop any tables, just run anything that has not been migrated.
+            </p>
+            
+            <code>
+                Command:
+                php aritsan migrate 
+            </code>
+            
+            
+            
+    
+            
+            <h5>Run Migrations when alerations are made to a migration</h5>
+            <p>If alterations are made to a migration that has already been run then we can simply rollback our migrations and migrate again.</p>
+            
+            
+            <code>
+                Command:
+                php artisan migrate:refresh
+            </code>
+                       
+            
+            
+    </body>
+</html>
