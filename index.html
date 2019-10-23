@@ -9,22 +9,23 @@
             <h1>PHP Artisan Commands:</h1>
                
             <h5 class="mt-2">PHP Artisan Help</h5>
-            <p>This will show the all available commands that we can use within the command line:</p>
-            
-            
-            <code>
+            <div class="alert alert-primary">
 
-                    Command:
-                    php artisan --help
+                <p>This will show the all available commands that we can use within the command line:</p>           
+                <code>
 
-            </code>
+                        Command:
+                        php artisan --help
+
+                </code>
             
+            </div>
             
         
     
             <h5 class="mt-2">Make a Controller</h5>
             <div class="alert alert-primary">
-                <p>Make a model and create a controller and a migration for that model.</p>
+                <p><b>Make a model and create a controller and a migration for that model.</b></p>
                 <code>
                 Command:
                 php artisan make:model SingularName -c -m
@@ -36,29 +37,33 @@
             
             
             <h5 class="mt-2">Make a controller:</h5>
+            <div class="alert alert-primary">
+
+                <code>
+                    command line:
+                                
+                    php artisan make:controller SingularNameController 
+                </code>
             
-            <code>
-                command line:
-                            
-                php artisan make:controller SingularNameController 
-            </code>
-            
-            
+            </div>
                        
             
             <h5 class="mt-2">Make a model:</h5>
-            <p>
-                (don't forget to think 'singular' when naming models)
-            </p>
-            
-            
-            <code>
-                Command:
+            <div class="alert alert-primary">
+
+                <p>
+                    (don't forget to think 'singular' when naming models)
+                </p>
                 
-                php artisan make:model SingularName
-            </code>
+                
+                <code>
+                    Command:
+                    
+                    php artisan make:model SingularName
+                </code>
+                
             
-            
+            </div>
             
             
             
@@ -66,47 +71,48 @@
             
             
             <h5 class="mt-2">Make a migration</h5>
-            
-            <p>(dont forget to make this a plural which means it has an s on the end of the table name),
-            
-            for example create_customers_migration</p>
-            
-            
-            <code>
-                    Command:
-            
-                    php artisan make:migration create_nameoftable_migartion
-            </code>
-            
+            <dov class="alert alert-primary">
+                <p>(dont forget to make this a plural which means it has an s on the end of the table name),
+                
+                for example create_customers_migration</p>
+                
+                
+                <code>
+                        Command:
+                
+                        php artisan make:migration create_nameoftable_migartion
+                </code>
+            </div>
             
             
             
             
             <h5 class="mt-2">Run Migrations</h5>
-            
-            <p>
-                To run migrations that have not been run then run this command.
-                This won't drop any tables, just run anything that has not been migrated.
-            </p>
-            
-            <code>
-                Command:
-                php aritsan migrate 
-            </code>
-            
+            <div class="alert alert-primary">
+                <p>
+                    To run migrations that have not been run then run this command.
+                    This won't drop any tables, just run anything that has not been migrated.
+                </p>
+                
+                <code>
+                    Command:
+                    php aritsan migrate 
+                </code>
+            </div>
             
             
     
             
             <h5 class="mt-2">Run Migrations when alerations are made to a migration</h5>
-            <p>If alterations are made to a migration that has already been run then we can simply rollback our migrations and migrate again.</p>
-            
-            
-            <code>
-                Command:
-                php artisan migrate:refresh
-            </code>
-        
+            <div class="alert alert-primary">
+                <p>If alterations are made to a migration that has already been run then we can simply rollback our migrations and migrate again.</p>
+                
+                
+                <code>
+                    Command:
+                    php artisan migrate:refresh
+                </code>
+            </div>
         </div>
             
             
